@@ -1,0 +1,6 @@
+   var oggi = new Date();
+   var datafine = oggi.getFullYear() + "-" +(oggi.getMonth() + 1) + "-" + oggi.getDate();
+
+   var datainizio = oggi.getFullYear() + "-" + oggi.getMonth() + "-" + oggi.getDate();
+ 
+   var datafine = new Date().getFullYear() + "-" + (new Date().getMonth() + 1) + "-" + new Date().getDate()

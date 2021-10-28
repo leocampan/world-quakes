@@ -1,0 +1,40 @@
+<html> 
+  
+<head> 
+    <title> 
+        JavaScript  
+      | Converting milliseconds to date. 
+    </title> 
+</head> 
+  
+<body style="text-align:center;"
+      id="body"> 
+    <h1 style="color:green;">   
+            GeeksForGeeks   
+        </h1> 
+    <p id="GFG_UP"
+       style="font-size: 19px; 
+              font-weight: bold;"> 
+    </p> 
+    <button onClick="GFG_Fun()"> 
+        click here 
+    </button> 
+    <p id="GFG_DOWN"
+       style="color: green; 
+              font-size: 24px;  
+              font-weight: bold;"> 
+    </p> 
+    <script> 
+        var up = document.getElementById('GFG_UP'); 
+        var down = document.getElementById('GFG_DOWN'); 
+        var milliseconds = 1635377803096;//;1388617808800; //1388620296020; 
+        up.innerHTML = "Milliseconds = " + milliseconds; 
+  
+        function GFG_Fun() { 
+            var date = new Date(milliseconds); 
+            down.innerHTML = date.toString(); 
+        } 
+    </script> 
+</body> 
+  
+</html> 
