@@ -1,5 +1,6 @@
 body {
     background-color: yellow;
+    
 }
 
 nav {
@@ -10,6 +11,7 @@ nav {
 
 .titlediv {
     background-color: mediumspringgreen;
+    font-family: 'Ribeye Marrow', cursive;
 }
 
 .sortmonthdiv {
@@ -34,4 +36,14 @@ nav {
 
 .filterDropdown {
     background-color: orchid;
+}
+
+.content {
+    background-color: skyblue;
+  
+    
+}
+
+.resultsdiv {
+    background-color: tomato;
 }

@@ -1,4 +1,8 @@
-$(document).ready(function() {
+window.onload = function(){createTable()};
+
+function createTable() {
+    window.open("http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2014-01-01&endtime=2014-01-02").close();
+    $(document).ready(function() {
     $.ajax({
         //url: "http://rest-service.guides.spring.io/greeting"
         url: "http://earthquake.usgs.gov/fdsnws/event/1/query?format=geojson&starttime=2014-01-01&endtime=2014-01-02"
@@ -22,7 +26,4 @@ $(document).ready(function() {
         $('#contenuto').append(s);
     });
 });
-
-function openFile() {
-    
 }
