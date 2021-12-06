@@ -5,12 +5,33 @@ body {
 nav {
     background-color: red;
     padding: 0px;
+    display: flex;
 }
 
-.selector {
+.titlediv {
+    background-color: mediumspringgreen;
+}
+
+.sortmonthdiv {
+    background-color: orange;
+}
+
+.monthsDropbtn {
     background-color: blue;
 }
 
-.div {
-    background-color: blue;
+.sortintdiv {
+    background-color: pink;
+}
+
+.intDropbtn {
+    background-color: green;
+}
+
+.sortfilterdiv {
+    background-color: chartreuse;
+}
+
+.filterDropdown {
+    background-color: orchid;
 }
