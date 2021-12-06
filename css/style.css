@@ -1,3 +1,16 @@
 body {
-    background-color: ;
+    background-color: yellow;
+}
+
+nav {
+    background-color: red;
+    padding: 0px;
+}
+
+.selector {
+    background-color: blue;
+}
+
+.div {
+    background-color: blue;
 }

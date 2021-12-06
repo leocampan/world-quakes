@@ -1,20 +1,79 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!----------------------------------------| [title] |---------------------------------------->
-        <link rel="shortcut icon" type="image" href="/img/logo.png">
-        <title>World Quakes</title>
 
-        <!----------------------------------------| [links] |---------------------------------------->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-        <script src="/js/script.js"></script>
-        <link rel="stylesheet" href="/css/style.css">
-    </head>
+<head>
+    <!----------------------------------------| [title] |---------------------------------------->
+    <link rel="shortcut icon" type="image" href="/img/logo.png">
+    <title>World Quakes</title>
 
-    <body>
-        <div>
-            <p id="totale">Total: </p>
-            <p id="contenuto"></p>
-        </div>
-    </body>
+    <!----------------------------------------| [links] |---------------------------------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="/js/script.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <div class="class">
+        <nav id="navbar">
+            <div>
+                <p id="bigtitle">World Quakes Data Base</p>
+                <div class="monthsdropdown">
+                    <p id="sort text">Month:
+                        <select class="monthsDropbtn" id="dropbtn">
+                            <option value="" selected disabled></option>
+                            <option value="month1">January</option>
+                            <option value="month2">February</option>
+                            <option value="month3">March</option>
+                            <option value="month4">April</option>
+                            <option value="month5">May</option>
+                            <option value="month6">June</option>
+                            <option value="month7">July</option>
+                            <option value="month8">August</option>
+                            <option value="month9">September</option>
+                            <option value="month10">October</option>
+                            <option value="month11">November</option>
+                            <option value="month12">December</option>
+                        </select>
+                </div>
+                <div>
+                    <p id="sort text">Intensity:
+                        <select class="intensityDropbtn" id="dropbtn">
+                            <option value="" selected disabled></option>
+                            <option value="int0">0</option>
+                            <option value="int1">1</option>
+                            <option value="int2">2</option>
+                            <option value="int3">3</option>
+                            <option value="int4">4</option>
+                            <option value="int5">5</option>
+                            <option value="int6">6</option>
+                            <option value="int7">7</option>
+                            <option value="int8">8</option>
+                            <option value="int9">9</option>
+                            <option value="int10">10</option>
+                            <option value="int11">11</option>
+                            <option value="int12">12</option>
+                        </select>
+                    </p>
+                </div>
+                <div>
+                    <p id="sort text">Filter:
+                        <select class="dropbtn" id="dropbtn">
+                            <option value="" selected disabled></option>
+                            <option value="range">Range ±0</option>
+                            <option value="range">Range ±0.5</option>
+                            <option value="state">State</option>       
+                        </select>
+                    </p>
+                </div>
+            </div>
+    </div>
+    </nav>
+    <div>
+        <p id="totale">Results: </p>
+        <p id="contenuto"></p>
+    </div>
+    </div>
+
+</body>
+
 </html>
