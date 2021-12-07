@@ -17,8 +17,8 @@ function createTable() {
             }
             s += '</table>';
             //console.log(data);
-            $('#totale').append(nDati);
-            $('#contenuto').append(s);
+            $('#total').append(nDati);
+            $('#content').append(s);
         });
     });
 }

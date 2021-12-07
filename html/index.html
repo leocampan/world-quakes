@@ -1,157 +1,93 @@
 <!DOCTYPE html>
-<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <!--<title> Drop Down Sidebar Menu | CodingLab </title>-->
-    <link rel="stylesheet" href="/css/style.css" />
-    <!-- Boxiocns CDN Link -->
+    <!----------------------------------------| [title] |---------------------------------------->
     <link
-      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
-      rel="stylesheet"
+      rel="shortcut icon"
+      type="image"
+      href="https://img.icons8.com/color/30/000000/earth-planet.png"
     />
+    <title>Worldwide Data Quakes</title>
+
+    <!----------------------------------------| [links] |---------------------------------------->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script.js"></script>
   </head>
   <body>
-    <div class="sidebar close">
-      <div class="logo-details">
-        <i class="bx bxl-c-plus-plus"></i>
-        <span class="logo_name">CodingLab</span>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="https://img.icons8.com/color/25/000000/earth-planet.png" />
+        <div class="logo-name">Worldwide<span>DATA</span>Quakes</div>
       </div>
-      <ul class="nav-links">
-        <li>
-          <a href="#">
-            <i class="bx bx-grid-alt"></i>
-            <span class="link_name">Dashboard</span>
-          </a>
-          <ul class="sub-menu blank">
-            <li><a class="link_name" href="#">Category</a></li>
-          </ul>
-        </li>
-        <li>
-          <div class="iocn-link">
-            <a href="#">
-              <i class="bx bx-collection"></i>
-              <span class="link_name">Category</span>
-            </a>
-            <i class="bx bxs-chevron-down arrow"></i>
+      
+      <div class="selections">
+        <div class="sortmonthdiv">
+          <div id="sortmonth">
+            Month:
+            <select class="monthsDropbtn" id="dropbtn1">
+              <option value="" selected disabled>Select</option>
+              <option value="m1">January</option>
+              <option value="m2">February</option>
+              <option value="m3">March</option>
+              <option value="m4">April</option>
+              <option value="m5">May</option>
+              <option value="m6">June</option>
+              <option value="m7">July</option>
+              <option value="m8">August</option>
+              <option value="m9">September</option>
+              <option value="m10">October</option>
+              <option value="m11">November</option>
+              <option value="m12">December</option>
+            </select>
           </div>
-          <ul class="sub-menu">
-            <li><a class="link_name" href="#">Category</a></li>
-            <li><a href="#">HTML & CSS</a></li>
-            <li><a href="#">JavaScript</a></li>
-            <li><a href="#">PHP & MySQL</a></li>
-          </ul>
-        </li>
-        <li>
-          <div class="iocn-link">
-            <a href="#">
-              <i class="bx bx-book-alt"></i>
-              <span class="link_name">Posts</span>
-            </a>
-            <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <div class="sortintdiv">
+          <div id="sortint">
+            Intensity:
+            <select class="intDropbtn" id="dropbtn2">
+              <option value="" selected disabled>Select</option>
+              <option value="i0">0</option>
+              <option value="i1">1</option>
+              <option value="i2">2</option>
+              <option value="i3">3</option>
+              <option value="i4">4</option>
+              <option value="i5">5</option>
+              <option value="i6">6</option>
+              <option value="i7">7</option>
+              <option value="i8">8</option>
+              <option value="i9">9</option>
+              <option value="i10">10</option>
+              <option value="i11">11</option>
+              <option value="i12">12</option>
+            </select>
           </div>
-          <ul class="sub-menu">
-            <li><a class="link_name" href="#">Posts</a></li>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Login Form</a></li>
-            <li><a href="#">Card Design</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-pie-chart-alt-2"></i>
-            <span class="link_name">Analytics</span>
-          </a>
-          <ul class="sub-menu blank">
-            <li><a class="link_name" href="#">Analytics</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-line-chart"></i>
-            <span class="link_name">Chart</span>
-          </a>
-          <ul class="sub-menu blank">
-            <li><a class="link_name" href="#">Chart</a></li>
-          </ul>
-        </li>
-        <li>
-          <div class="iocn-link">
-            <a href="#">
-              <i class="bx bx-plug"></i>
-              <span class="link_name">Plugins</span>
-            </a>
-            <i class="bx bxs-chevron-down arrow"></i>
+        </div>
+        <div class="sortfilterdiv">
+          <div id="sortfilter">
+            Filter:
+            <select class="filterDropdown" id="dropbtn3">
+              <option value="" selected disabled>Select</option>
+              <option value="range">Range ±0</option>
+              <option value="range">Range ±0.5</option>
+              <option value="state">State</option>
+            </select>
           </div>
-          <ul class="sub-menu">
-            <li><a class="link_name" href="#">Plugins</a></li>
-            <li><a href="#">UI Face</a></li>
-            <li><a href="#">Pigments</a></li>
-            <li><a href="#">Box Icons</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-compass"></i>
-            <span class="link_name">Explore</span>
-          </a>
-          <ul class="sub-menu blank">
-            <li><a class="link_name" href="#">Explore</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-history"></i>
-            <span class="link_name">History</span>
-          </a>
-          <ul class="sub-menu blank">
-            <li><a class="link_name" href="#">History</a></li>
-          </ul>
-        </li>
-        <li>
-          <a href="#">
-            <i class="bx bx-cog"></i>
-            <span class="link_name">Setting</span>
-          </a>
-          <ul class="sub-menu blank">
-            <li><a class="link_name" href="#">Setting</a></li>
-          </ul>
-        </li>
-        <li>
-          <div class="profile-details">
-            <div class="profile-content">
-              <!--<img src="image/profile.jpg" alt="profileImg">-->
-            </div>
-            <div class="name-job">
-              <div class="profile_name">Prem Shahi</div>
-              <div class="job">Web Desginer</div>
-            </div>
-            <i class="bx bx-log-out"></i>
-          </div>
-        </li>
-      </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="sidebar">
+      <img
+        src="https://img.icons8.com/material-rounded/35/000000/menu--v2.png"
+      />
+      <div class="sidebar-content">
+        <div class="resultsdiv">
+          <p id="total">Results:</p>
+        </div>
+        <p id="content"></p>
+      </div>
     </div>
-    <section class="home-section">
-      <div class="home-content">
-        <i class="bx bx-menu"></i>
-        <span class="text">Drop Down Sidebar</span>
-      </div>
-    </section>
-    <script>
-      let arrow = document.querySelectorAll(".arrow");
-      for (var i = 0; i < arrow.length; i++) {
-        arrow[i].addEventListener("click", (e) => {
-          let arrowParent = e.target.parentElement.parentElement; //selecting main parent of arrow
-          arrowParent.classList.toggle("showMenu");
-        });
-      }
-      let sidebar = document.querySelector(".sidebar");
-      let sidebarBtn = document.querySelector(".bx-menu");
-      console.log(sidebarBtn);
-      sidebarBtn.addEventListener("click", () => {
-        sidebar.classList.toggle("close");
-      });
-    </script>
   </body>
 </html>
