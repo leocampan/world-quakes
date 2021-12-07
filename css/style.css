@@ -62,3 +62,7 @@ span {
   padding: 6px 14px;
   width: 240px;
 }
+
+.sidebar-content .resultsdiv {
+  background-color: darkmagenta;
+}
