@@ -1,9 +1,41 @@
 body {
+  margin: 0;
   background-color: aquamarine;
-  position: relative;
-  min-width: 100vh;
+}
+.row,
+.col {
   overflow: hidden;
-  width: 100%;
+  position: absolute;
+}
+
+.row {
+  left: 0;
+  right: 0;
+}
+
+.col {
+  top: 0;
+  bottom: 0;
+}
+
+.scroll-x {
+  overflow-x: auto;
+}
+
+.scroll-y {
+  overflow-y: auto;
+  width: 27%;
+  width: max-content;
+}
+
+.header.row {
+  height: 150px;
+  top: 0;
+}
+
+.body.row {
+  top: 150px;
+  bottom: 10px;
 }
 
 nav {
@@ -56,13 +88,26 @@ span {
 .sidebar {
   background-color: brown;
   height: 100%;
-  position: fixed;
-  top: auto;
-  left: 0;
-  padding: 6px 14px;
-  width: 240px;
+  width: max-content;
+  /* position: relative; */
+ 
+ 
 }
 
-.sidebar-content .resultsdiv {
+.sidebar-content .results-div {
   background-color: darkmagenta;
+  text-align: center;
+}
+
+.sidebar .content-table th {
+  background-color: greenyellow;
+  text-align: center;
+  font-weight: bold;
+  border-collapse: collapse;
+  position: sticky;
+  top: 0;
+}
+
+.sidebar .content-table table {
+    background-color: white;
 }
