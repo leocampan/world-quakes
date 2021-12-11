@@ -18,77 +18,84 @@
 <body>
   <nav class="navbar">
     <div class="logo">
-      <img src="https://img.icons8.com/color/25/000000/earth-planet.png" />
+      <!-- <img src="https://img.icons8.com/color/25/000000/earth-planet.png" /> -->
       <div class="logo-name">World<span>Quakes</span></div>
     </div>
 
-    <div class="selections">
-      <div class="sortmonthdiv">
-        <div id="sortmonth">
-          Month:
-          <select class="monthsDropbtn" id="dropbtn1">
-            <option value="" selected disabled>Select</option>
-            <option value="m1">January</option>
-            <option value="m2">February</option>
-            <option value="m3">March</option>
-            <option value="m4">April</option>
-            <option value="m5">May</option>
-            <option value="m6">June</option>
-            <option value="m7">July</option>
-            <option value="m8">August</option>
-            <option value="m9">September</option>
-            <option value="m10">October</option>
-            <option value="m11">November</option>
-            <option value="m12">December</option>
-          </select>
-        </div>
+    <div class="filters">
+      <div class="month-div">
+        Month:
+        <select class="monthsDropbtn" id="dropbtn1">
+          <option value="" selected disabled>Select</option>
+          <option value="m1">January</option>
+          <option value="m2">February</option>
+          <option value="m3">March</option>
+          <option value="m4">April</option>
+          <option value="m5">May</option>
+          <option value="m6">June</option>
+          <option value="m7">July</option>
+          <option value="m8">August</option>
+          <option value="m9">September</option>
+          <option value="m10">October</option>
+          <option value="m11">November</option>
+          <option value="m12">December</option>
+        </select>
       </div>
-      <div class="sortintdiv">
-        <div id="sortint">
-          Intensity:
-          <select class="intDropbtn" id="dropbtn2">
-            <option value="" selected disabled>Select</option>
-            <option value="i0">0</option>
-            <option value="i1">1</option>
-            <option value="i2">2</option>
-            <option value="i3">3</option>
-            <option value="i4">4</option>
-            <option value="i5">5</option>
-            <option value="i6">6</option>
-            <option value="i7">7</option>
-            <option value="i8">8</option>
-            <option value="i9">9</option>
-            <option value="i10">10</option>
-            <option value="i11">11</option>
-            <option value="i12">12</option>
-          </select>
-        </div>
+
+      <div class="intensity-div">
+        Intensity:
+        <select class="intDropbtn">
+          <option value="" selected disabled>Select</option>
+          <option value="i0">0</option>
+          <option value="i1">1</option>
+          <option value="i2">2</option>
+          <option value="i3">3</option>
+          <option value="i4">4</option>
+          <option value="i5">5</option>
+          <option value="i6">6</option>
+          <option value="i7">7</option>
+          <option value="i8">8</option>
+          <option value="i9">9</option>
+          <option value="i10">10</option>
+          <option value="i11">11</option>
+          <option value="i12">12</option>
+        </select>
       </div>
-      <div class="sortfilterdiv">
-        <div id="sortfilter">
-          Filter:
-          <select class="filterDropdown" id="dropbtn3">
-            <option value="" selected disabled>Select</option>
-            <option value="range">Range ±0</option>
-            <option value="range">Range ±0.5</option>
-            <option value="state">State</option>
-          </select>
-        </div>
+
+      <div class="range-div">
+        Range:
+        <select class="filterDropdown">
+          <option value="" selected disabled>Select</option>
+          <option value="range">± 0</option>
+          <option value="range">± 0.25</option>
+          <option value="range">± 0.5</option>
+        </select>
       </div>
     </div>
-  </nav>
-  <div class="sidebar">
-    <img src="https://img.icons8.com/material-rounded/35/000000/menu--v2.png" />
 
-    <div class="sidebar-content" style="background-color: red;">
+    <div class="state-div">
+      State
+      <input type="text">
+    </div>
+    
+  </nav>
+
+  <div class="sidebar">
+    <button>
+      <img src="https://img.icons8.com/material-rounded/30/000000/menu--v2.png" />
+
+    </button>
+
+    <!-- <div class="sidebar-content" style="background-color: red;">
       <p id="results">Results:</p>
 
-    </div>
+    </div> 
 
-  </div>
-  <div class="body row scroll-y">
-    <table class="content-table" id="content"></table>
-  </div>
+    <div class="body row scroll-y">
+      <table class="content-table" id="content"></table>
+    </div>
+  </div>-->
+
 </body>
 
 </html>

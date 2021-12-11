@@ -45,14 +45,18 @@ nav {
   height: min-content;
   display: flex;
   padding: 15px;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  
 }
 
-.navbar .selections {
+.navbar .filters {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: tomato;
+  box-shadow: 10px 10px;
+  
 }
 
 .navbar div {
@@ -64,21 +68,28 @@ nav {
   color: black;
   font-size: 35px;
   background-color: yellow;
+  box-shadow: 10px 10px;
+  
 }
 
-.navbar .sortmonthdiv {
-  background-color: darkmagenta;
+.navbar .month-div {
+ background-color: transparent;
   padding: 5px;
 }
 
-.navbar .sortintdiv {
-  background-color: indianred;
+.navbar .intensity-div {
+  background-color: transparent;
   padding: 5px;
 }
 
-.navbar .sortfilterdiv {
-  background-color: aqua;
+.navbar .range-div {
+  background-color: transparent;
   padding: 5px;
+}
+.navbar .state-div {
+  background-color: tomato;
+  padding: 5px;
+  box-shadow: 10px 10px;
 }
 
 span {
@@ -86,12 +97,20 @@ span {
 }
 
 .sidebar {
-  background-color: brown;
-  height: 100%;
-  width: max-content;
-  /* position: relative; */
- 
- 
+  background: blueviolet;
+  top: 11%;
+  height: 85%;
+  width: 250px;
+  position: fixed;
+  box-shadow: 10px 10px;
+}
+
+.sidebar button {
+  background: transparent;
+  position: absolute;
+  left: 78%;
+  top: 5px;
+  transform: translateX(-50%);
 }
 
 .sidebar-content .results-div {
