@@ -23,52 +23,39 @@
     </div>
 
     <div class="filters">
-      <div class="month-div">
-        Month:
-        <select class="monthsDropbtn" id="dropbtn1">
-          <option value="" selected disabled>Select</option>
-          <option value="m1">January</option>
-          <option value="m2">February</option>
-          <option value="m3">March</option>
-          <option value="m4">April</option>
-          <option value="m5">May</option>
-          <option value="m6">June</option>
-          <option value="m7">July</option>
-          <option value="m8">August</option>
-          <option value="m9">September</option>
-          <option value="m10">October</option>
-          <option value="m11">November</option>
-          <option value="m12">December</option>
-        </select>
+      <div class="date-div">
+        Date:
+        <input type="month" name="" id="month" oninput="createTable()">
       </div>
 
-      <div class="intensity-div">
+      <div class="magnitude-div">
         Intensity:
-        <select class="intDropbtn">
+        <select class="magnitude-dropdown">
           <option value="" selected disabled>Select</option>
-          <option value="i0">0</option>
-          <option value="i1">1</option>
-          <option value="i2">2</option>
-          <option value="i3">3</option>
-          <option value="i4">4</option>
-          <option value="i5">5</option>
-          <option value="i6">6</option>
-          <option value="i7">7</option>
-          <option value="i8">8</option>
-          <option value="i9">9</option>
-          <option value="i10">10</option>
+          <option value="m0">0</option>
+          <option value="m1">1</option>
+          <option value="m2">2</option>
+          <option value="m3">3</option>
+          <option value="m4">4</option>
+          <option value="m5">5</option>
+          <option value="m6">6</option>
+          <option value="m7">7</option>
+          <option value="m8">8</option>
+          <option value="m9">9</option>
+          <!-- <option value="i10">10</option>
           <option value="i11">11</option>
-          <option value="i12">12</option>
+          <option value="i12">12</option> -->
         </select>
       </div>
 
       <div class="range-div">
         Range:
-        <select class="filterDropdown">
+        <select class="filter-dropdown">
           <option value="" selected disabled>Select</option>
           <option value="range">± 0</option>
           <option value="range">± 0.25</option>
           <option value="range">± 0.5</option>
+          <option value="range">Dates</option>
         </select>
       </div>
     </div>
@@ -77,24 +64,27 @@
       State
       <input type="text">
     </div>
-    
+
   </nav>
 
-  <div class="sidebar">
+  <!-- <div class="sidebar">
     <button>
       <img src="https://img.icons8.com/material-rounded/30/000000/menu--v2.png" />
 
     </button>
 
-    <!-- <div class="sidebar-content" style="background-color: red;">
-      <p id="results">Results:</p>
-
-    </div> 
+   
+  </div> -->
+  <div class="side-content">
+    <p id="results">Results:</p>
 
     <div class="body row scroll-y">
       <table class="content-table" id="content"></table>
     </div>
-  </div>-->
+  </div>
+
+  
+  
 
 </body>
 
