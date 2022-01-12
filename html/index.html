@@ -13,6 +13,9 @@
   <link rel="stylesheet" href="/css/style.css" />
   <script src="/js/script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <!-- <script language="JavaScript" type="text/javascript" src="/js/jquery-1.2.6.min.js"></script>
+  <script language="JavaScript" type="text/javascript" src="/js/jquery-ui-personalized-1.5.2.packed.js"></script>
+  <script language="JavaScript" type="text/javascript" src="/js/sprinkle.js"></script> -->
 </head>
 
 <body>
@@ -23,15 +26,11 @@
     </div>
 
     <div class="filters">
-      <div class="date-div">
-        Date:
-        <input type="month" name="" id="month" oninput="createTable()">
-      </div>
-
+      
       <div class="magnitude-div">
         Magnitude:
-        <select class="magnitude-dropdown" id="magnitude">
-          <option value="" selected disabled>Select</option>
+        <select class="magnitude-dropdown" id="magnitude" onchange="createTable()">
+          <option value="" >All</option>
           <option value="0">0</option>
           <option value="1">1</option>
           <option value="2">2</option>
@@ -50,17 +49,31 @@
 
       <div class="range-div">
         Range:
-        <select class="filter-dropdown" id="range">
-          <option value="0" selected >± 0</option>
-          <option value="0.25">± 0.25</option>
+        <select class="filter-dropdown" id="range" onchange="createTable()">
+          <option value="" selected>None</option>
           <option value="0.5">± 0.5</option>
+          <option value="0.25">± 0.25</option>
+          <option value="0">± 0</option>
+          <option onselect="datestable()">2 dates</option>
         </select>
       </div>
+
+      <div class="date-div">
+        Date:
+        <input type="month" name="" id="month" oninput="createTable()">
+      </div> 
+    </div>
+
+    <div class="datesrange-div">
+      Date 1
+     <input type="date" id="date1" onchange="datestable()">
+      Date 2
+      <input type="date" id="date2" onchange="datestable()">
     </div>
 
     <div class="state-div">
       State
-      <input type="text">
+      <input type="text" id="state" onkeyup="createTable()">
     </div>
 
   </nav>
@@ -70,9 +83,8 @@
       <img src="https://img.icons8.com/material-rounded/30/000000/menu--v2.png" />
 
     </button>
-
-   
   </div> -->
+
   <div class="side-content">
     
     <p id="results">Results:</p>
@@ -82,9 +94,9 @@
     </div>
   </div>
 
-  
-  
-
+  <div class="osm-maps">
+    <iframe id="mappa" src="mappa_osm.htm" width="50%" height="540" frameborder="0" style="border:0" scrolling="no"></iframe>
+</div>
 </body>
 
 </html>

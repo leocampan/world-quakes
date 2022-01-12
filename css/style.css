@@ -25,6 +25,7 @@ body {
 .scroll-y {
   overflow-y: auto;
   width: max-content;
+  max-width: 50%;
 }
 
 .header.row {
@@ -32,7 +33,7 @@ body {
 }
 
 .body.row {
-  top: 13%;
+  top: 20%;
   bottom: 1%;
   left: .6%;
 }
@@ -96,7 +97,7 @@ span {
 }
 
 .side-content .content-table th {
-  background-color: yellow;
+  background-color: tomato;
   text-align: center;
   font-weight: bold;
   border-collapse: collapse;
@@ -109,13 +110,30 @@ span {
   box-shadow: 5px 5px;
   padding: 5px;
   position: fixed;
-  top: 7%;
+  top: 10.5%;
   left: .7%;
 }
 
 .side-content table {
   background-color: white;
-  /* border-collapse: collapse; */
-  
+  border-collapse: collapse;
+  text-align: center;
 }
 
+.osm-maps {
+  padding-bottom: 40%;
+  }
+
+  .osm-maps iframe {
+  float: right;
+  margin-top: 10px;
+  margin-right: 20px;
+  
+  
+  }
+
+ .navbar .datesrange-div {
+  background-color: tomato;
+  padding: 5px;
+  box-shadow: 5px 5px;
+ }
